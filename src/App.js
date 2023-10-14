@@ -77,7 +77,7 @@ function App() {
     // 사용자 활동이 있을 때마다 타이머를 리셋합니다.
     const resetTimer = () => {
       clearTimeout(timeoutId);
-      timeoutId = setTimeout(goToHomePage, 10000); // 60,000 밀리초(1분) 동안 활동이 없을 경우 홈 페이지로 이동합니다.
+      timeoutId = setTimeout(goToHomePage, 60000); // 60,000 밀리초(1분) 동안 활동이 없을 경우 홈 페이지로 이동합니다.
     };
 
     // 사용자 활동 이벤트 리스너를 추가합니다.
