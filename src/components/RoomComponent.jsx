@@ -8,7 +8,13 @@ export default function RoomComponent() {
     const navigate = useNavigate();
     
     const handleBackUrl = () => {
-        navigate(-1);
+        if(param === "1fRoom1") {
+            window.location.pathname = "1f"
+        } else if(param === "1fRoom2") {
+            window.location.pathname = "1f"
+        } else if(param === "1fRoom3") {
+            window.location.pathname = "1f"
+        }
     };
 
     useEffect(() => {
