@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Root from "./pages/Root";
+import Home from "./pages/Home";
+import FirstFloor from "./pages/FirstFloor";
+import SecondFloor from "./pages/SecondFloor";
+import ThirdFloor from "./pages/ThirdFloor";
+import RoomComponent from "./components/RoomComponent";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    children: [
+      { index: true, element: <Home /> },
+      {
+        path: "/1f",
+        element: <FirstFloor />,
+      },
+      {
+        path: "/room/:roomId",
+        element: <RoomComponent />
+      }
+      ,
+      {
+        path: "/2f",
+        element: <SecondFloor />,
+      },
+      {
+        path: "/3f",
+        element: <ThirdFloor />,
+      },
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
