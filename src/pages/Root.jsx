@@ -1,18 +1,16 @@
-import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import React from "react";
+import { Link, Outlet } from "react-router-dom";
 
 export default function Root() {
-    return (
-        <div id='container'>
-            <aside>Hello Aside!
-                <ul>
-                    <li><Link to={"/1f"}>1F</Link></li>
-                </ul>
-
-            </aside>
-            <Outlet />
-            
-        </div>
-    );
+  return (
+    <div className="flex w-full h-full">
+      <aside className="grid-rows-4 grid h-full w-[10%] items-center">
+        <img src="" />
+        <Link to={"/1f"}>1F</Link>
+        <Link to={"/2f"}>2F</Link>
+        <Link to={"/3f"}>3F</Link>
+      </aside>
+      <Outlet />
+    </div>
+  );
 }
-
