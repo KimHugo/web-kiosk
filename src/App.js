@@ -8,6 +8,17 @@ import ThirdFloor from "./pages/ThirdFloor";
 import RoomComponent from "./components/RoomComponent";
 import React, { useEffect, useState } from 'react';
 
+// function toggleFullScreen() {
+//   if (!document.fullscreenElement) {
+//     document.documentElement.requestFullscreen(); // 표준 Fullscreen API
+//   } else {
+//     if (document.exitFullscreen) {
+//       document.exitFullscreen(); // 표준 Fullscreen API
+//     }
+//   }
+// }
+
+// document.body.addEventListener('click', toggleFullScreen);
 
 const router = createBrowserRouter([
   {

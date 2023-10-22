@@ -8,6 +8,7 @@ export default function FirstFloor() {
       <div className="bg-contain bg-no-repeat bg-[url('./imgs/1f.png')] w-full h-full">
         <div className="relative w-full h-full">
           <Link className="fixed top-[430px] left-[1110px] right-0" to={"/room/1F_VS"}>
+          {/* <Link className="fixed top-[47%] left-[77%] right-0" to={"/room/1F_VS"}> */}
             <MdOutlineRoom className="w-[50px] h-[50px]" />
           </Link>
           {/* <Link to={"/room/1fRoom2"}>
