@@ -10,7 +10,7 @@ export default function Root() {
         <Link className="w-full h-full text-7xl text-right text- p-5 bg-orange-400 text-white" to={"/2f"}>2F</Link>
         <Link className="w-full h-full text-7xl text-right text- p-5 bg-lime-800 text-white" to={"/3f"}>3F</Link>
       </aside>
-      <Outlet />
+      <Outlet className="w-[80%] h-full" />
     </div>
   );
 }
