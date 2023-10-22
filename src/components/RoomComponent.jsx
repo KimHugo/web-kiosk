@@ -21,6 +21,20 @@ export default function RoomComponent() {
 
   if (param === "1F_VS") {
     QRImgUrl = "/imgs/QR/1F_VS.png";
+  } else if (param === "2fS201") {
+    QRImgUrl = "/imgs/QR/2fS201.png";
+  } else if (param === "2fS204") {
+    QRImgUrl = "/imgs/QR/2fS204.png";
+  } else if (param === "2fS206") {
+    QRImgUrl = "/imgs/QR/2fS206.png";
+  } else if (param === "3fS301") {
+    QRImgUrl = "/imgs/QR/3fS301.png";
+  } else if (param === "3fS303") {
+    QRImgUrl = "/imgs/QR/3fS303.png";
+  } else if (param === "3fM301") {
+    QRImgUrl = "/imgs/QR/3fM301.png";
+  } else if (param === "3fM302") {
+    QRImgUrl = "/imgs/QR/3fM302.png";
   }
 
   useEffect(() => {
