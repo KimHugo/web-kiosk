@@ -10,10 +10,20 @@ export default function RoomComponent() {
   const handleBackUrl = () => {
     if (param === "1F_VS") {
       window.location.pathname = "1f";
-    } else if (param === "1fRoom2") {
-      window.location.pathname = "1f";
-    } else if (param === "1fRoom3") {
-      window.location.pathname = "1f";
+    } else if (param === "2f_S201") {
+      window.location.pathname = "2f";
+    } else if (param === "2f_S204") {
+      window.location.pathname = "2f";
+    } else if (param === "2f_S206") {
+      window.location.pathname = "2f";
+    } else if (param === "3f_S301") {
+      window.location.pathname = "3f";
+    } else if (param === "3f_S303") {
+      window.location.pathname = "3f";
+    } else if (param === "3f_M301") {
+      window.location.pathname = "3f";
+    } else if (param === "3f_M302") {
+      window.location.pathname = "3f";
     }
   };
 
@@ -21,20 +31,20 @@ export default function RoomComponent() {
 
   if (param === "1F_VS") {
     QRImgUrl = "/imgs/QR/1F_VS.png";
-  } else if (param === "2fS201") {
-    QRImgUrl = "/imgs/QR/2fS201.png";
-  } else if (param === "2fS204") {
-    QRImgUrl = "/imgs/QR/2fS204.png";
-  } else if (param === "2fS206") {
-    QRImgUrl = "/imgs/QR/2fS206.png";
-  } else if (param === "3fS301") {
-    QRImgUrl = "/imgs/QR/3fS301.png";
-  } else if (param === "3fS303") {
-    QRImgUrl = "/imgs/QR/3fS303.png";
-  } else if (param === "3fM301") {
-    QRImgUrl = "/imgs/QR/3fM301.png";
-  } else if (param === "3fM302") {
-    QRImgUrl = "/imgs/QR/3fM302.png";
+  } else if (param === "2f_S201") {
+    QRImgUrl = "/imgs/QR/2f_S201.png";
+  } else if (param === "2f_S204") {
+    QRImgUrl = "/imgs/QR/2f_S204.png";
+  } else if (param === "2f_S206") {
+    QRImgUrl = "/imgs/QR/2f_S206.png";
+  } else if (param === "3f_S301") {
+    QRImgUrl = "/imgs/QR/3f_S301.png";
+  } else if (param === "3f_S303") {
+    QRImgUrl = "/imgs/QR/3f_S303.png";
+  } else if (param === "3f_M301") {
+    QRImgUrl = "/imgs/QR/3f_M301.png";
+  } else if (param === "3f_M302") {
+    QRImgUrl = "/imgs/QR/3f_M302.png";
   }
 
   useEffect(() => {
@@ -42,31 +52,31 @@ export default function RoomComponent() {
       setRoomNum(
         "https://twinmotion.unrealengine.com/panorama/SVmW6CcMBbIwlZUe"
       );
-    } else if (param === "2fS201") {
+    } else if (param === "2f_S201") {
       setRoomNum(
         "https://twinmotion.unrealengine.com/panorama/oNQFvS2svekVpHuX"
       );
-    } else if (param === "2fS204") {
+    } else if (param === "2f_S204") {
       setRoomNum(
         "https://twinmotion.unrealengine.com/panorama/I3AfkMb36NiyVT5x"
       );
-    } else if (param === "2fS206") {
+    } else if (param === "2f_S206") {
       setRoomNum(
         "https://twinmotion.unrealengine.com/panorama/gVFfxd9ruhEdS8ZL"
       );
-    } else if (param === "3fS301") {
+    } else if (param === "3f_S301") {
       setRoomNum(
         "https://twinmotion.unrealengine.com/panorama/GAuhMVVPgy_qeHro"
       );
-    } else if (param === "3fS303") {
+    } else if (param === "3f_S303") {
       setRoomNum(
         "https://twinmotion.unrealengine.com/panorama/Dz_20rfG6ywSUigc"
       );
-    } else if (param === "3fM301") {
+    } else if (param === "3f_M301") {
       setRoomNum(
         "https://twinmotion.unrealengine.com/panorama/-GCHniyhR20jchNp"
       );
-    } else if (param === "3fM302") {
+    } else if (param === "3f_M302") {
       setRoomNum(
         "https://twinmotion.unrealengine.com/panorama/qxJj_OeCMn0ox0fZ"
       );
@@ -83,7 +93,7 @@ export default function RoomComponent() {
       </div>
 
       <button
-        className="absolute bottom-4 right-4 z-10 bg-white text-4xl"
+        className="absolute bottom-4 right-4 z-10 bg-white text-7xl"
         onClick={handleBackUrl}
       >
         <AiOutlineRollback />
