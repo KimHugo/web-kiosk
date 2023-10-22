@@ -66,7 +66,7 @@ export default function RoomComponent() {
       );
     } else if (param === "3f_S301") {
       setRoomNum(
-        "https://twinmotion.unrealengine.com/panorama/GAuhMVVPgy_qeHro"
+        "https://twinmotion.unrealengine.com/panorama/BGqNJ8RqYd_9FGNO"
       );
     } else if (param === "3f_S303") {
       setRoomNum(
