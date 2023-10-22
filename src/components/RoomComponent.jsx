@@ -19,7 +19,7 @@ export default function RoomComponent() {
 
     useEffect(() => {
         if(param === "1fRoom1") {
-            setRoomNum("https://twinmotion.unrealengine.com/panorama/RUAm8Bx4FsoPKiT0?lang=ko")
+            setRoomNum("https://twinmotion.unrealengine.com/panorama/SVmW6CcMBbIwlZUe")
         } else if(param === "1fRoom2") {
             setRoomNum("https://twinmotion.unrealengine.com/panorama/3vecGkz2XnlONmpd")
         } else if(param === "1fRoom3") {
