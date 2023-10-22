@@ -87,17 +87,17 @@ export default function RoomComponent() {
     <div className="w-[80%] h-full relative">
       <iframe className="w-full h-full z-[8]" src={roomNum}></iframe>
       <div>
-        <button className="absolute bottom-4 left-4 z-10 bg-white text-4xl">
+        {/* <button className="absolute bottom-4 left-4 z-10 bg-white text-4xl">
           <img className="w-[80px] h-[80px]" src={QRImgUrl} alt="QR CODE" />
-        </button>
+        </button> */}
       </div>
 
-      <button
+      {/* <button
         className="absolute bottom-4 right-4 z-10 bg-white text-7xl"
         onClick={handleBackUrl}
       >
         <AiOutlineRollback />
-      </button>
+      </button> */}
     </div>
   );
 }
