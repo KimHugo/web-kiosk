@@ -8,38 +8,27 @@ import ThirdFloor from "./pages/ThirdFloor";
 import RoomComponent from "./components/RoomComponent";
 import React, { useEffect, useState } from 'react';
 
-// function toggleFullScreen() {
-//   if (!document.fullscreenElement) {
-//     document.documentElement.requestFullscreen(); // 표준 Fullscreen API
-//   } else {
-//     if (document.exitFullscreen) {
-//       document.exitFullscreen(); // 표준 Fullscreen API
-//     }
+
+// document.addEventListener("click", function() {
+//   const body = document.documentElement;
+
+//   // 최신 브라우저들은 Fullscreen API를 지원합니다.
+//   if (body.requestFullscreen) {
+//     body.requestFullscreen();
+//   } 
+//   // Firefox를 위한 지원
+//   else if (body.mozRequestFullScreen) {
+//     body.mozRequestFullScreen();
+//   } 
+//   // Chrome 및 Safari를 위한 지원
+//   else if (body.webkitRequestFullscreen) {
+//     body.webkitRequestFullscreen();
+//   } 
+//   // IE를 위한 지원
+//   else if (body.msRequestFullscreen) {
+//     body.msRequestFullscreen();
 //   }
-// }
-
-// document.body.addEventListener('click', toggleFullScreen);
-
-document.addEventListener("click", function() {
-  const body = document.documentElement;
-
-  // 최신 브라우저들은 Fullscreen API를 지원합니다.
-  if (body.requestFullscreen) {
-    body.requestFullscreen();
-  } 
-  // Firefox를 위한 지원
-  else if (body.mozRequestFullScreen) {
-    body.mozRequestFullScreen();
-  } 
-  // Chrome 및 Safari를 위한 지원
-  else if (body.webkitRequestFullscreen) {
-    body.webkitRequestFullscreen();
-  } 
-  // IE를 위한 지원
-  else if (body.msRequestFullscreen) {
-    body.msRequestFullscreen();
-  }
-});
+// });
 
 
 const router = createBrowserRouter([
